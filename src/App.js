@@ -51,7 +51,7 @@ const App = () => {
 
   useEffect(() => {
     fetchDeals();
-  }, []);
+  }, [currentPage, pageSize, sortBy, sortOrder]);
 
   return (
     <div className="container">
